@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-modern: "Space Grotesk", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-stylish: "Macondo Swash Caps", cursive;
+
+  --color-premium-gold: #D4AF37;
+  --color-premium-dark: #1A1A1A;
+}
+
+@layer base {
+  html, body {
+    @apply bg-white text-gray-900 transition-colors duration-300 overflow-x-hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .dark html, .dark body {
+    @apply bg-[#0A0A0A] text-white;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.dark .bg-white {
+  @apply bg-[#111111]! border-white/10!;
+}
+
+.dark .text-gray-500 {
+  @apply text-gray-400!;
+}
+
+.dark .text-gray-600 {
+  @apply text-gray-300!;
+}
+
+.dark .bg-gray-50 {
+  @apply bg-white/5!;
+}
+
+.dark .bg-gray-100 {
+  @apply bg-white/10!;
+}
+
+.dark .border-gray-100 {
+  @apply border-white/10!;
+}
+
+.dark .border-gray-200 {
+  @apply border-white/20!;
+}
