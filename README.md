@@ -1,3 +1,7 @@
+<div align="center">
+  <img height="150" src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif"  />
+</div>
+<h1 align="center">
 # ButterFly - Premium Men's Shirts 🦋
 https://butterfly-shirts.vercel.app/
 
