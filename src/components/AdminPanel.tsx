@@ -603,14 +603,14 @@ export default function AdminPanel() {
 
   return (
     <ErrorBoundary>
-      <div 
-        className="min-h-screen flex text-white font-sans selection:bg-white selection:text-black transition-colors duration-300"
-        style={{
-            backgroundColor: '#333333',
-            backgroundImage: 'radial-gradient(#e0e0e0 0.5px, transparent 0.7px)',
-            backgroundSize: '10px 10px'
-          }}
-      >
+    <div 
+  className="min-h-screen text-black dark:text-gray-200 font-sans selection:bg-black selection:text-white transition-colors duration-300"
+  style={{
+    backgroundColor: 'transparent', 
+    backgroundImage: 'radial-gradient(rgba(128, 128, 128, 0.3) 0.5px, transparent 0.7px)',
+    backgroundSize: '10px 10px'
+  }}
+    >
       {/* Sidebar */}
       <aside className="w-64 bg-white/5 backdrop-blur-lg border-r border-gray-200 dark:border-white/10 hidden md:flex flex-col">
         <div className="p-6 border-b border-gray-100 dark:border-white/10 flex items-center gap-3">
@@ -759,7 +759,7 @@ export default function AdminPanel() {
                       }}
                       itemStyle={{ color: '#fff' }}
                       labelStyle={{ color: '#9ca3af', marginBottom: '4px' }}
-                      formatter={(value: number) => [`${value}%`, 'Stock Share']}
+                      formatter={(value: any) => [`${value}%`, 'Stock Share']}
                       labelFormatter={(label, items) => {
                         const payload = items[0]?.payload;
                         return `${payload?.fullName} (${payload?.stock} Units)`;

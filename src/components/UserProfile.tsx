@@ -120,12 +120,12 @@ export default function UserProfile({ user, profile, orders }: UserProfileProps)
 
   return (
     <div 
-      className="min-h-screen text-black dark:text-gray-200 font-sans selection:bg-black selection:text-white transition-colors duration-300"
-      style={{
-            backgroundColor: '#333333',
-            backgroundImage: 'radial-gradient(#e0e0e0 0.5px, transparent 0.7px)',
-            backgroundSize: '10px 10px'
-          }}
+  className="min-h-screen text-black dark:text-gray-200 font-sans selection:bg-black selection:text-white transition-colors duration-300"
+  style={{
+    backgroundColor: 'transparent', 
+    backgroundImage: 'radial-gradient(rgba(128, 128, 128, 0.3) 0.5px, transparent 0.7px)',
+    backgroundSize: '10px 10px'
+  }}
     >
       <div className="min-h-screen pb-20">
         {/* Header */}
