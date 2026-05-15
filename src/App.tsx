@@ -663,14 +663,14 @@ function AppContent() {
   };
 
   return (
-    <div 
-  className="min-h-screen text-black dark:text-gray-200 font-sans selection:bg-black selection:text-white transition-colors duration-300"
-  style={{
-    backgroundColor: '#333333', 
-    backgroundImage: 'radial-gradient(rgba(128, 128, 128, 0.3) 0.5px, transparent 0.7px)',
-    backgroundSize: '10px 10px'
-  }}
-    >
+  <div 
+    className="min-h-screen text-black dark:text-gray-200 font-sans selection:bg-black selection:text-white transition-colors duration-300"
+    style={{
+      backgroundColor: '#333333',
+      backgroundImage: 'radial-gradient(#e0e0e0 0.5px, transparent 0.7px)',
+      backgroundSize: '10px 10px'
+    }}
+  >
       {/* Navigation */}
 <nav className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-[#273436]/80 backdrop-blur-md border-b border-gray-100 dark:border-white/5">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

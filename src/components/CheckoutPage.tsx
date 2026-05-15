@@ -136,12 +136,12 @@ export default function CheckoutPage({ cart, setCart, user }: CheckoutPageProps)
 
   return (
     <div 
-  className="min-h-screen text-black dark:text-gray-200 font-sans selection:bg-black selection:text-white transition-colors duration-300"
-  style={{
-    backgroundColor: '#333333', 
-    backgroundImage: 'radial-gradient(rgba(128, 128, 128, 0.3) 0.5px, transparent 0.7px)',
-    backgroundSize: '10px 10px'
-  }}
+      className="min-h-screen text-black dark:text-gray-200 font-sans selection:bg-black selection:text-white transition-colors duration-300"
+      style={{
+        backgroundColor: '#333333',
+        backgroundImage: 'radial-gradient(#e0e0e0 0.5px, transparent 0.7px)',
+        backgroundSize: '10px 10px'
+      }}
     >
       <div className="max-w-4xl mx-auto px-4 py-12">
       {/* Progress Bar */}
