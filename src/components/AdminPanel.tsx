@@ -606,7 +606,7 @@ export default function AdminPanel() {
     <div 
   className="min-h-screen text-black dark:text-gray-200 font-sans selection:bg-black selection:text-white transition-colors duration-300"
   style={{
-    backgroundColor: 'transparent', 
+    backgroundColor: '#333333', 
     backgroundImage: 'radial-gradient(rgba(128, 128, 128, 0.3) 0.5px, transparent 0.7px)',
     backgroundSize: '10px 10px'
   }}
